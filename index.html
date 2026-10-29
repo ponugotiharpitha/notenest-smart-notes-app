@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoteNest — Smart Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <span class="flower">🌷</span>
+        <div>
+          <h1>NoteNest</h1>
+          <p>Your little space for big ideas <span>♥</span></p>
+        </div>
+      </div>
+      <div class="doodle">♡　〰︎　✈</div>
+    </header>
+
+    <section class="create-panel">
+      <h2>✎ Create a Note</h2>
+      <form id="noteForm">
+        <div class="form-fields">
+          <input id="title" type="text" placeholder="Note title" required>
+          <select id="category" required>
+            <option value="">Select category</option>
+            <option>Personal</option>
+            <option>Study</option>
+            <option>Work</option>
+            <option>Daily Tasks</option>
+            <option>Ideas</option>
+          </select>
+          <input id="tags" type="text" placeholder="Tags (e.g. study, work)">
+        </div>
+        <textarea id="content" placeholder="Write your note..." required></textarea>
+        <button class="add-btn" type="submit">＋ Add Note</button>
+      </form>
+    </section>
+
+    <section class="tools">
+      <label class="search-box">⌕ <input id="search" type="search" placeholder="Search notes..."></label>
+      <label class="filter-box">📁
+        <select id="filter">
+          <option value="All Categories">All Categories</option>
+          <option>Personal</option><option>Study</option><option>Work</option>
+          <option>Daily Tasks</option><option>Ideas</option>
+        </select>
+      </label>
+    </section>
+
+    <main id="notesGrid" class="notes-grid"></main>
+    <footer>Made with <span>♥</span> by NoteNest</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
